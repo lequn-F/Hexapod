@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Continuity-Aware CPG Locomotion Control for a Jointless Hexapod Robot">
+  <meta property="og:title" content="Continuity-Aware CPG Locomotion Control for a Jointless Hexapod Robot"/>
+  <meta property="og:description" content="A CPG controller for a jointless hexapod robot that combines a duty-factor-modulated Hopf oscillator with a cyclic C1 trigonometric mapping."/>
+  <meta property="og:url" content=""/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="Continuity-Aware CPG Locomotion Control for a Jointless Hexapod Robot">
+  <meta name="twitter:description" content="A CPG controller for a jointless hexapod robot that combines a duty-factor-modulated Hopf oscillator with a cyclic C1 trigonometric mapping.">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="CPG, hexapod robot, jointless, Hopf oscillator, locomotion control, C1 mapping, duty factor, compliant leg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Continuity-Aware CPG Locomotion Control for a Jointless Hexapod Robot</title>
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Continuity-Aware CPG Locomotion Control for a Jointless Hexapod Robot</h1>
+          <div class="is-size-5 publication-authors">
+            <!-- Paper authors -->
+            <span class="author-block">
+              Lequn Fu<sup>1</sup>,</span>
+              <span class="author-block">
+                Yibin Liu<sup>1</sup>,</span>
+                <span class="author-block">
+                  Shiqi Li<sup>1,†</sup></span>
+                        </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>School of Mechanical Science and Engineering, Huazhong University of Science and Technology</span>
+            <span class="eql-cntrb"><small><br><sup>†</sup>Indicates Corresponding Author</small></span>
+          </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <!-- TODO: Update with your arXiv paper ID -->
+                      <!-- <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- TODO: Add your supplementary material PDF or remove this section -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/lequn-F/Resonance-Aware-CPG" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a> -->
+                </span>
+
+                <!-- TODO: Update with your arXiv paper ID -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Overview</h2>
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/overview_final.mp4"
+        type="video/mp4">
+      </video>
+      <!-- <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Continuity-Aware CPG Locomotion Control for a Jointless Hexapod Robot</span> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Minimal-DOF legged robots rely heavily on their mechanical compliance, which makes the actuator command profile an important part of the locomotion design. In particular, a piecewise-linear (C<sup>0</sup>) mapping from oscillator state to actuator position introduces velocity jumps at phase transitions. We present a CPG controller for a jointless hexapod robot that combines a duty-factor-modulated Hopf oscillator with a cyclic C<sup>1</sup> trigonometric mapping. The mapping removes the velocity jumps and keeps the commanded acceleration bounded. In fixed-duration Webots trials, it changes forward travel by only 0.21% relative to a cubic Hermite C<sup>1</sup> baseline while reducing lateral drift by 51.6%. Physical demonstrations on slopes, gravel, grass, obstacles, and stairs show that the same controller can be used across several terrain conditions.          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- PDF pages as images -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Method Overview</h2>
+    <div class="content has-text-centered">
+      <!--
+        说明：浏览器不能把 PDF “当图片”直接插入。
+        需要先把 PDF 每一页导出为 PNG/JPG，然后把文件放到 static/images/ 里，像下面这样引用。
+        你可以复制下面的 <figure> 多次，分别对应 page2/page3...
+      -->
+      <figure class="image">
+        <img src="static/images/overview.jpg" alt="Paper page 1" loading="lazy">
+        <figcaption class="has-text-justified is-size-6" style="margin-top: 0.75rem;">
+          Overview of the proposed framework. A gait command sets the CPG parameters, the coupled oscillators generate leg references, and the trigonometric mapping converts them into actuator commands.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- End PDF pages as images -->
+
+<!-- Deployment video -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3 has-text-centered">Flat Ground Locomotion</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-half">
+          <video poster="" id="flat walk forward" autoplay controls muted loop width="100%">
+            <!-- Your video here -->
+            <source src="static/videos/walkforwardx0.4.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-half">
+          <video poster="" id="flat walk backward" autoplay controls muted loop width="100%">
+            <!-- Your video here -->
+            <source src="static/videos/walkback.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3 has-text-centered">Slope Traversal</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-half">
+          <video poster="" id="slope up" autoplay controls muted loop width="100%">
+            <!-- Your video here -->
+            <source src="static/videos/slopesup_load.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-half">
+          <video poster="" id="slope down" autoplay controls muted loop width="100%">
+            <!-- Your video here -->
+            <source src="static/videos/slopesdown_load.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3 has-text-centered">Stair Climbing</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-half">
+          <video poster="" id="stairs up" autoplay controls muted loop width="100%">
+            <!-- Your video here -->
+            <source src="static/videos/stairsup_load.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-half">
+          <video poster="" id="stairs down" autoplay controls muted loop width="100%">
+            <!-- Your video here -->
+            <source src="static/videos/stairsdown_load.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3 has-text-centered">Uneven Ground & Multi-terrain</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-half">
+          <video poster="" id="uneven" autoplay controls muted loop width="100%">
+            <!-- Your video here -->
+            <source src="static/videos/uneven.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-half">
+          <video poster="" id="walk back slope and stairs" autoplay controls muted loop width="100%">
+            <!-- Your video here -->
+            <source src="static/videos/slope_back.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
